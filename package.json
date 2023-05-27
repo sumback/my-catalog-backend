@@ -1,0 +1,8 @@
+{
+  "name": "my-catalog-backend",
+  "version": "1.0.0",
+  "description": "Proof of concept for the backend part of animes and shows series catalog.",
+  "author": "Sumback",
+  "license": "MIT",
+  "private": false
+}
