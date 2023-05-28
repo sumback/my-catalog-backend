@@ -3,3 +3,14 @@ node_modules/
 
 # IDE
 /.vscode
+
+# compiled output
+/dist
+/documentation
+
+# logs
+logs
+*.log
+
+# tests
+/coverage
