@@ -1,0 +1,9 @@
+import { UsersService } from '@/services/users.service';
+import { Controller } from '@nestjs/common';
+
+@Controller('users')
+export class UsersController {
+  constructor(private usersService: UsersService) {}
+
+  // TODO
+}

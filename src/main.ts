@@ -7,7 +7,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const fastifyOptions: ConstructorParameters<typeof FastifyAdapter>[0] = {
-    logger: true,
+    logger: process.env.LOG_LEVEL === 'trace',
   };
   const fastifyAdapter = new FastifyAdapter(fastifyOptions);
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, fastifyAdapter);
@@ -20,6 +20,7 @@ async function bootstrap() {
   const port = process.env.PORT || 3000;
   await app.listen(port, host);
   Logger.log(`🚀 Application is running on: http://localhost:${port}/${globalPrefix}`);
+  Logger.log(`🚀 Swagger is running on: http://localhost:${port}/${globalPrefix}/swagger`);
 }
 
 bootstrap();

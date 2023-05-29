@@ -7,10 +7,12 @@
   "private": false,
   "dependencies": {
     "@fastify/static": "^6.10.2",
+    "@nestjs/axios": "^2.0.0",
     "@nestjs/common": "^9.4.2",
     "@nestjs/core": "^9.4.2",
     "@nestjs/platform-fastify": "^9.4.2",
     "@nestjs/swagger": "^6.3.0",
+    "axios": "^1.4.0",
     "fastify-swagger": "^5.2.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",

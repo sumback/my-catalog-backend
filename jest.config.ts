@@ -10,6 +10,9 @@ const config: Config = {
   collectCoverageFrom: ['**/*.(t|j)s'],
   coverageDirectory: '../coverage',
   testEnvironment: 'node',
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/../src/$1',
+  },
 };
 
 export default config;
