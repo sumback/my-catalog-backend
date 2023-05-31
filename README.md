@@ -34,4 +34,4 @@ $ yarn run test:cov
 
 ## License
 
-MY-CATALOG-BACKEND is an [MIT licensed](.github/LICENSE) open source project.
+MY-CATALOG-BACKEND is an [MIT licensed](LICENSE.md) open source project.
